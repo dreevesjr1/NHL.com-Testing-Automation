@@ -1,21 +1,116 @@
-Glossary
-POS:Position
-GP:Games Played
-G:Goals
-A:Assists
-PTS:Points
-+/-:Plus/Minus Rating
-PIM:Penalty Minutes
-TOI/G:Time On Ice Per Game
-PPG:Power Play Goals
-PPA:Power Play Assists
-S:Shots
-S%:Shooting Percentage
-SHFT:Shifts
-GWG:Game-Winning Goals
-FW:Faceoffs Won
-FL:Faceoffs Lost
-FO%:Faceoff Win Percent
-SOA:Shootout Attempts
-SOG:Shootout Goals
-SO%:Shootout Shot Percentage
+# 🧪 Automated Testing & Data Validation System (NHL Stats)
+
+## 📌 Overview
+
+This project is an end-to-end testing and data validation system built using Java, Selenium, and SQL. It validates both frontend UI data and backend database consistency using real-world NHL statistics.
+
+The project demonstrates core QA engineering practices including automated testing, data validation, debugging, and system documentation.
+
+---
+
+## 🚀 Features
+
+* Automated UI testing using Selenium WebDriver
+* Validation of structured data from NHL.com
+* Pass/fail test reporting with detailed logging
+* Data integrity checks using SQL queries
+* Error handling for timeouts, missing elements, and inconsistent data
+* Entity Relationship Diagram (ERD) documentation using crow’s foot notation
+
+---
+
+## 🧪 Test Coverage
+
+### UI Testing (Selenium)
+
+* Validate player statistics table loads correctly
+* Verify player data fields (name, team, stats) are present and correctly formatted
+* Detect missing or invalid values (e.g., empty names, non-numeric stats)
+
+### Data Validation (SQL)
+
+* Validate relationships between tables using JOIN queries
+* Detect anomalies and inconsistencies in stored data
+* Ensure normalization and relational integrity
+
+---
+
+## 🛠️ Technologies Used
+
+* **Java**
+* **Selenium WebDriver**
+* **MySQL / SQL**
+* **MySQL Workbench (ERD – Crow’s Foot Notation)**
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+
+* Java JDK 8+
+* Selenium WebDriver dependencies
+* Firefox browser installed
+* GeckoDriver installed: https://github.com/mozilla/geckodriver/releases
+
+### Configuration
+
+Update the driver path in your code:
+
+```
+System.setProperty("webdriver.gecko.driver", "path/to/geckodriver.exe");
+```
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+2. Open in IntelliJ or Eclipse
+3. Run the main test class
+4. View console output for test results
+
+---
+
+## 📊 Sample Output
+
+```
+TEST: Table Load → PASS
+TEST: Player Data Validation → PASS
+TEST: Stat Format Validation → FAIL
+ERROR: Invalid GP value for player X
+```
+
+---
+
+## 📈 Key QA Concepts Demonstrated
+
+* Test case design and execution
+* Assertions and validation logic
+* Debugging and error handling
+* Data integrity verification
+* Logging and result reporting
+* Documentation (ERD + workflow explanation)
+
+---
+
+## 🔮 Future Improvements
+
+* Integrate TestNG or JUnit for structured test execution
+* Add Playwright (JavaScript) version for modern test automation
+* Generate automated HTML test reports
+* Implement parallel test execution
+* Expand test coverage for additional pages and edge cases
+
+---
+
+## 🎯 Purpose
+
+This project demonstrates the transition from basic automation to **test-driven validation**, emphasizing how QA engineers ensure system reliability, accuracy, and maintainability.
+
+---
+
+## 👨‍💻 Author
+
+Daniel Reeves
+GitHub: https://github.com/dreevesjr1
